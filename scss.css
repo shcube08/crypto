@@ -50,3 +50,51 @@ main {
 	from { transform: rotate(0); }
 	to { transform: rotate(1turn); }
 }
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+  }
+  
+  body {
+	font-family: "Ubuntu", system-ui, sans-serif;
+	background-color: hsl(220, 45%, 8%);
+	display: grid
+	place-content: center;
+	min-height: 100vh;
+	padding-right: 1rem;
+	padding-left: 1rem;
+  }
+  
+  h1 {
+	font-size: clamp(1rem, 1rem + 8vw, 3rem);
+	text-align: center;
+	max-width: 20ch;
+	color: #fff;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-image: linear-gradient(165deg, yellowgreen, cyan, mediumpurple);
+	filter: drop-shadow(0.03em 0.03em 0.03em black);
+  
+	&::selection {
+	  -webkit-text-fill-color: black;
+	  background-color: mediumpurple;
+	}
+  }
+  label{
+	font-size: clamp(1rem, 1rem + 7vw, 0.5rem);
+	text-align: center;
+	max-width: 20ch;
+	color: #fff;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-image: linear-gradient(165deg, yellowgreen, cyan, mediumpurple);
+	filter: drop-shadow(0.03em 0.03em 0.03em black);
+  
+	&::selection {
+	  -webkit-text-fill-color: black;
+	  background-color: mediumpurple;
+	}
+
+  }
+  
