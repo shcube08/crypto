@@ -56,7 +56,7 @@ const fetchPrice=async(cType)=>{
         <td>
             Change
         </td>
-        <td >${change} ${target}</td>
+        <td >${change}</td>
     </tr>
     <tr>
         <td>
