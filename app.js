@@ -26,8 +26,8 @@ function timeConverter(UNIX_timestamp){
   }
 
 const fetchPrice=async(cType)=>{
-    const r = await axios.get(`https://api.cryptonator.com/api/ticker/${cType}`);
-        const price =r.data.ticker.price;
+    const r = await axios.get(`api.coincap.io/v2/assets/${cType}`);
+        const price =r.data.priceUsd;
         const volume =r.data.ticker.volume;
         const change =r.data.ticker.change;
         const base =r.data.ticker.base;
